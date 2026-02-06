@@ -34,7 +34,6 @@ app.get("/healthcheck", (req, res) => {
     status: "success",
     message: "OK",
   });
-  res.send("OK");
 });
 app.use("/api/credit-package", creditPackageRouter);
 app.use("/api/coaches/skill", skillRouter);
